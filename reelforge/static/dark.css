@@ -1,0 +1,44 @@
+:root{color-scheme:dark;--bg:#090b0a;--ink:#eef2eb;--muted:#a8b1a3;--line:#30372e;--green:#cee995;--lime:#cee995;--white:#141814}
+body{background:var(--bg);color:var(--ink)}
+::selection{background:#cee995;color:#132015}
+button:focus-visible,a:focus-visible,summary:focus-visible{outline-color:#cee995}
+.sidebar{background:#080a09;color:#c5d0bf;border-right:1px solid #242b22}
+.brand{color:#f0f4eb}.brandmark{background:transparent}.brand small,.workspace-label,.breadcrumb,.version,.sidebar-bottom small{color:#a0af92}
+.sidebar-bottom{border-color:#293126}.nav{color:#b5c2a8}.nav.active{background:#25301e;color:#d8efa7}.nav b{background:#39472e;color:#e8f3d6}
+.breadcrumb b{color:#eef2eb}.status-pill{background:#1b2318;border-color:#3a482e;color:#d4e4c0}
+.eyebrow,.text-button,.file-button,.advanced,.advanced summary{color:#bdcf9f}.page-heading p,.field-help,.source-footer{color:#a8b49d}
+.card,.job{background:#141814;border-color:#30372e;box-shadow:0 3px 12px #0003}
+.step,.count{background:#252e1f;border-color:#3b4830;color:#c9dda9}
+label:not(.toggle-label){color:#b7c6a7}
+input,select,textarea{background:#0d110d;border-color:#46513d;color:#eff3e9}
+input::placeholder,textarea::placeholder{color:#8c9a80;opacity:1}
+input:focus,select:focus,textarea:focus{border-color:#b8d782;box-shadow:0 0 0 2px #b8d78222}
+input[type=checkbox]{accent-color:#cee995}
+.source-tab{color:#a6b798}.source-tab.active{color:#d4eca2;border-color:#d4eca2}
+.primary{background:#cee995;color:#152111}.secondary{background:#25301f;color:#e0eccd;border-color:#4a5c38}
+.source-tabs,.selection-bar,.video-row,.health-row{border-color:#30392b}
+.notice{background:#1c2617;border-color:#465b32;color:#d0e2b8}.notice.error{background:#331e18;border-color:#7b4933;color:#ffc3a0}
+.selection-bar,.empty p,.empty-tags span,.delivery-note,.video-meta,.job-detail,.setup-grid p,.help-faq-head span{color:#a7b598}
+.empty-tags span{border-color:#3c4932}.film-icon{background:#20291a;border-color:#40512f;color:#c9dfa9}
+.video-path,.video-path.existing{color:#c7dfa0}.video-path.error,.job-error,.health-row b.missing{color:#ffb790}
+.naming-preview{background:#1c2616;border-color:#4b6132}.naming-preview code,.health-row b{color:#d1e6af}
+.divider{background:#30392b}.folder-input button{background:#26311f;color:#d0e3b0;border-color:#46513d}
+.queue-summary{background:#1b2516;border-color:#40532e}.queue-summary span{color:#b6c99c}
+.progress-track{background:#303c27}.progress-fill{background:#cee995}
+.badge,.badge.completed{background:#2b3b1e;color:#d4e9b4}.badge.failed{background:#4a2a1d;color:#ffcaac}
+.job-target{color:#b4c69b}.setup-grid pre{background:#0c110b;color:#d1e4b5}
+dialog{background:#141814;color:#eef2eb;border-color:#455239;box-shadow:0 20px 70px #0009}dialog::backdrop{background:#000a}
+.icon-button{color:#b8caa0}.folder-row{background:#202b19;color:#dfebcf}
+footer,footer span:nth-child(2){color:#9fae90;border-color:#30392b}#toast{background:#cee995;color:#16220f;box-shadow:0 5px 30px #0007}
+.date-summary{background:#1c2617;color:#d0e2b8}.date-count{background:#11180d;color:#d3e5b9;border-color:#50643c}
+.date-count[aria-pressed="true"]{background:#cee995;color:#13200e;border-color:#cee995}
+.date-badge,.date-badge.unknown{background:#2a3224;color:#bdcbaa}.date-badge.documented{background:#2d411e;color:#d1edb0}
+.date-badge.likely{background:#3e3219;color:#f1d596}.date-badge.conflicting{background:#48281c;color:#ffc4a3}
+.date-reviewed,.date-period{color:#c6dba5}.date-period.outside,.date-period.overlap{color:#f0cc8b}
+.evidence-item{background:#0e140c;border-color:#3c4b30}.evidence-item p{color:#b4c49f}.evidence-item a{color:#d2e8ae}
+.description-text{background:#0b1009;color:#bfccaf}
+.help-content p,.help-content li,.help-content td{color:#b9c6ac}.help-content a{color:#d1e7aa}
+.help-content code,.help-content pre{background:#222e1a;color:#dcebc8}.help-steps li:before{background:#2e4021;color:#ddedc7}
+.help-steps strong,.help-content .table-label,.help-content summary{color:#eff5e5}
+.help-callout{background:#202d17;border-left-color:#a7c972}.help-content th{background:#202a1a;color:#e7efd9}
+.help-content td,.help-content th,.help-content details{border-color:#37432e}

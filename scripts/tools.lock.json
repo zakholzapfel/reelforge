@@ -1,0 +1,41 @@
+{
+  "ffmpeg": {
+    "version": "8.1.3",
+    "url": "https://ffmpeg.org/releases/ffmpeg-8.1.3.tar.xz",
+    "sha256": "7138d28c96d9d3e3af4ee3d8cad72741f8ffb40da90c1112235dea3ecd3178a3"
+  },
+  "x264": {
+    "version": "b35605ace3ddf7c1a5d67a2eb553f034aef41d55",
+    "url": "https://code.videolan.org/videolan/x264/-/archive/b35605ace3ddf7c1a5d67a2eb553f034aef41d55/x264-b35605ace3ddf7c1a5d67a2eb553f034aef41d55.tar.gz",
+    "sha256": "cd71a7515b0e9a012e1ac9b1f8415bebcaf6fc97d4db32286642ac4c0fbe24f9"
+  },
+  "deno": {
+    "version": "v2.9.7",
+    "assets": {
+      "deno-aarch64-apple-darwin.zip": {
+        "url": "https://github.com/denoland/deno/releases/download/v2.9.7/deno-aarch64-apple-darwin.zip",
+        "sha256": "5cd46d6268f6f78f5d88bdc7159d20bd44cdaa4b3303474839f87ec6fe7ae25c"
+      },
+      "deno-aarch64-pc-windows-msvc.zip": {
+        "url": "https://github.com/denoland/deno/releases/download/v2.9.7/deno-aarch64-pc-windows-msvc.zip",
+        "sha256": "c4c4ac8bfdaa37814bda5c05fc9cdf2154904e2ef8277673a30bdceaaa649807"
+      },
+      "deno-aarch64-unknown-linux-gnu.zip": {
+        "url": "https://github.com/denoland/deno/releases/download/v2.9.7/deno-aarch64-unknown-linux-gnu.zip",
+        "sha256": "c832298b1ad4422481334855f6003e0f54145762c5a134f20a489511d2f65bbf"
+      },
+      "deno-x86_64-apple-darwin.zip": {
+        "url": "https://github.com/denoland/deno/releases/download/v2.9.7/deno-x86_64-apple-darwin.zip",
+        "sha256": "95daaff11c116a52ad54785e7914c8e9c9cdcaba793c5ed929c74ca2d8e6259a"
+      },
+      "deno-x86_64-pc-windows-msvc.zip": {
+        "url": "https://github.com/denoland/deno/releases/download/v2.9.7/deno-x86_64-pc-windows-msvc.zip",
+        "sha256": "a0c3101b4158d1dfb7d6a78a7bf0f3de80c96bb423c152beec8beb22786f2238"
+      },
+      "deno-x86_64-unknown-linux-gnu.zip": {
+        "url": "https://github.com/denoland/deno/releases/download/v2.9.7/deno-x86_64-unknown-linux-gnu.zip",
+        "sha256": "c6527f24f4b16031d3ae4fa9f658d5f11534c8d84ce7dc8502420280919c3490"
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "url": "https://example.com/replace-with-owned-video.mp4",
+    "title": "Morning Landscape",
+    "season": 1,
+    "episode": 1,
+    "collection": "My Series"
+  },
+  {
+    "title": "An ordered multi-part example",
+    "parts": [
+      "https://example.com/replace-with-part-1.mp4",
+      "https://example.com/replace-with-part-2.mp4"
+    ],
+    "season": 1,
+    "episode": 2
+  }
+]

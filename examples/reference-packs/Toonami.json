@@ -1,0 +1,82 @@
+{
+  "name": "Optional Toonami reference examples",
+  "records": [
+    {
+      "title": "Toonami - Space is the Place",
+      "year_start": 2000,
+      "year_end": 2000,
+      "url": "https://toonami.fandom.com/wiki/Space_is_the_Place",
+      "label": "Toonami Wiki \u00b7 fan-maintained reference",
+      "note": "The archive documents this named promo. Match the exact uploaded edit before treating it as verified footage.",
+      "aliases": [
+        "Space is the Place"
+      ]
+    },
+    {
+      "title": "Toonami - Pardon Our Dust",
+      "year_start": 2000,
+      "year_end": 2000,
+      "url": "https://toonami.fandom.com/wiki/Pardon_Our_Dust",
+      "label": "Toonami Wiki \u00b7 fan-maintained reference",
+      "note": "The archive documents this named promo. Match the exact uploaded edit before treating it as verified footage.",
+      "aliases": [
+        "Pardon Our Dust"
+      ]
+    },
+    {
+      "title": "Toonami - Technologically Superior",
+      "year_start": 2000,
+      "year_end": 2000,
+      "url": "https://toonami.fandom.com/wiki/Technologically_Superior",
+      "label": "Toonami Wiki \u00b7 fan-maintained reference",
+      "note": "The archive documents this named promo. Match the exact uploaded edit before treating it as verified footage.",
+      "aliases": [
+        "Technologically Superior"
+      ]
+    },
+    {
+      "title": "Toonami - Broken Promise Dreams",
+      "year_start": 2001,
+      "year_end": 2001,
+      "url": "https://toonami.fandom.com/wiki/Broken_Promise_(Dreams)",
+      "label": "Toonami Wiki \u00b7 fan-maintained reference",
+      "note": "The archive documents this named promo. Match the exact uploaded edit before treating it as verified footage.",
+      "aliases": [
+        "Broken Promise Dreams"
+      ]
+    },
+    {
+      "title": "Toonami - Advanced Robotics",
+      "year_start": 2001,
+      "year_end": 2001,
+      "url": "https://toonami.fandom.com/wiki/Advanced_Robotics",
+      "label": "Toonami Wiki \u00b7 fan-maintained reference",
+      "note": "The archive documents this named promo. Match the exact uploaded edit before treating it as verified footage.",
+      "aliases": [
+        "Advanced Robotics"
+      ]
+    },
+    {
+      "title": "Toonami - Mad Rhetoric Walking Stick",
+      "year_start": 2001,
+      "year_end": 2001,
+      "url": "https://toonami.fandom.com/wiki/Mad_Rhetoric_(Walking_Stick)",
+      "label": "Toonami Wiki \u00b7 fan-maintained reference",
+      "note": "The archive documents this named promo. Match the exact uploaded edit before treating it as verified footage.",
+      "aliases": [
+        "Mad Rhetoric Walking Stick"
+      ]
+    },
+    {
+      "title": "Toonami - Broken Promise Dandy Dreams",
+      "year_start": 2014,
+      "year_end": 2014,
+      "url": "https://toonami.fandom.com/wiki/Broken_Promise_(Dandy_Dreams)",
+      "label": "Toonami Wiki \u00b7 fan-maintained reference",
+      "note": "The archive documents this named promo. Match the exact uploaded edit before treating it as verified footage.",
+      "aliases": [
+        "Broken Promise Dandy Dreams"
+      ]
+    }
+  ]
+}
