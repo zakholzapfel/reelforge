@@ -2,11 +2,11 @@
 
 ReelForge runs in its own app window with an icon, or in a local browser tab. Both use the same authenticated local API, queue, naming planner, and media engine. No paid API or subscription is required.
 
-## Mac DMG: the planned public download
+## Mac DMG download
 
 A Mac DMG is practical for this app. Open the disk image, drag ReelForge.app onto Applications, eject the image, and launch ReelForge from Applications. Python, FFmpeg, ffprobe, and Deno are bundled by the native build. End users do not run setup scripts or install developer tools.
 
-**Release status:** this source contains the bundled build pipeline. A finished Mac DMG is not included in the source ZIP. A successful native build and a real Mac GUI check are still required. CI artifacts are previews until those checks are complete.
+**Release status:** [v0.5.0 desktop preview](https://github.com/zakholzapfel/reelforge/releases/tag/v0.5.0) is published with native installers. The project owner tested Apple Silicon Mac installation, playlist downloads, audio playback, naming, and reopening. Intel Mac and Windows passed automated packaged-app checks and await hands-on installation/UI testing. The native release assets are unchanged from the successful build; a source ZIP remains a separate developer option.
 
 We are using a free distribution route without paid Developer ID signing or Apple notarization. The build applies a local ad-hoc signature for bundle integrity; this does not identify a trusted publisher to Gatekeeper. Users can encounter a first-launch warning. If they trust the official download, Apple's supported exception is under **System Settings → Privacy & Security → Open Anyway**, after attempting to open the app. Availability depends on macOS version and device policy. Do not disable Gatekeeper or remove quarantine using Terminal as an installation step.
 
@@ -35,7 +35,7 @@ Use **Publish-to-GitHub-macOS.command** in the extracted source package. This is
 
 The script includes no token. GitHub CLI handles account authentication. Do not paste credentials into the script, source files, or chat. If repository creation succeeded but the push failed, preserve the extracted folder and inspect the existing remote; the script intentionally stops on a repeat invocation rather than rewriting history.
 
-No repository has been created merely by preparing this package. The connected GitHub tool cannot create repositories; this launcher performs that one-time operation on the publisher's computer.
+The repository now exists at https://github.com/zakholzapfel/reelforge. The bootstrap publisher launcher intentionally refuses to overwrite an existing repository; contributors should clone the existing repository instead.
 
 ## Build on a target platform
 
@@ -53,7 +53,7 @@ python scripts/build_desktop.py
 
 The media build needs a C compiler, GNU make, and pkg-config. On Windows, run only the shell media-build step in MSYS2 MINGW64. Run the Python steps with the regular Windows Python environment. The included workflow handles this distinction and prepares Inno Setup and Microsoft's WebView2 bootstrapper. On a local Windows build, also run `scripts/prepare_windows_webview.ps1` and install Inno Setup 6.3+ before the final build step.
 
-The workflow creates preview artifacts, not a published GitHub release. Native apps must be built on the target OS and architecture. The Mac ZIP and DMG preserve framework symlinks. Generated files include SHA256SUMS.txt and per-platform preview notes. Build inputs are locked by version, commit, and SHA-256 in scripts/tools.lock.json; nothing downloads from a floating “latest” tool URL during builds.
+The desktop-build workflow creates preview artifacts. The separate publish-release workflow validates the successful source run and checksums before publishing selected artifacts unchanged to GitHub Releases. It refuses to overwrite an existing release with different checksums. Native apps must be built on the target OS and architecture. The Mac ZIP and DMG preserve framework symlinks. Generated files include SHA256SUMS.txt and per-platform preview notes. Build inputs are locked by version, commit, and SHA-256 in scripts/tools.lock.json; nothing downloads from a floating “latest” tool URL during builds.
 
 ### Build checks
 
@@ -65,7 +65,7 @@ These checks cannot verify native window rendering, dialogs, Gatekeeper behavior
 
 The media build enables libx264 and the native AAC encoder. It builds static FFmpeg libraries and disables optional auto-detected dependencies to avoid linking to build-host Homebrew/MSYS2 packages. Mac builds enable Secure Transport and Windows builds enable Schannel for native TLS support. The Linux QA recipe does not add TLS support to FFmpeg. This lean build is intended for normal downloaded files and the app's merge/convert/join workflows; specialist streaming/hardware codecs are not promised.
 
-Native packages include the exact FFmpeg/x264 source archives, their license texts, configure instructions and logs, and a manifest recording pre-packaging tool versions and checksums. The separate programs retain their own licenses; ReelForge source is MIT licensed. Installed Python dependency metadata and available license files, including Python and PyInstaller notices, are collected into the app. Deno's own MIT license is included; its transitive dependency notices still require a distribution review before a public binary release. These are preview artifacts until that review and platform GUI testing are complete.
+Native packages include the exact FFmpeg/x264 source archives, their license texts, configure instructions and logs, and a manifest recording pre-packaging tool versions and checksums. The separate programs retain their own licenses; ReelForge source is MIT licensed. Installed Python dependency metadata and available license files, including Python and PyInstaller notices, are collected into the app. Deno's own MIT license is included. The release also includes THIRD-PARTY-NOTICES.md with pinned Deno source links and upstream dependency inventory references; upstream's inventory is not version-labeled. Intel Mac and Windows remain preview builds pending hands-on GUI testing.
 
 For an explicitly incomplete developer build only, `python scripts/build_desktop.py --without-media-tools` skips media bundling. Its output filename includes `incomplete`; it must not be advertised as the end-user download.
 

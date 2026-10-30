@@ -87,7 +87,7 @@ The queue, cached dates, saved reviews, and imported reference library persist i
 
 ### How do I update?
 
-Close the old desktop app, or stop browser mode with Ctrl+C in its launcher terminal. Extract the new release into its own folder and run that folder's launcher. Use the newly opened browser tab and check the version in the sidebar or Setup & about. Keep the home-folder database to retain saved jobs and reviews.
+Quit ReelForge. On Mac, open the new DMG and replace the app in Applications; on Windows, run the new installer. Open the newly installed copy and check the version in the sidebar or Setup & about. Keep the home-folder database to retain saved jobs and reviews. Source users should follow the source setup instructions instead.
 
 ## Troubleshooting
 
@@ -110,4 +110,4 @@ ReelForge provides the UI/API, configurable source mapping, naming preview, queu
 
 ## Desktop download status
 
-This ZIP is the source package. The bundled build workflow includes Python, FFmpeg/ffprobe, and Deno and prepares Mac DMG or Windows installer previews. Native builds and GUI tests still need to finish before those can be offered as ready-to-use downloads. Mac distribution will use the free route without paid signing/notarization, with documented first-launch instructions. See [Desktop setup and publishing](DESKTOP.md).
+This ZIP is the source package. The bundled build workflow includes Python, FFmpeg/ffprobe, and Deno and prepares Mac DMG or Windows installer previews. Native installers are published in GitHub Releases. Apple Silicon Mac has passed hands-on installation/download checks; Intel Mac and Windows have passed automated checks and await hands-on GUI testing. Mac distribution will use the free route without paid signing/notarization, with documented first-launch instructions. See [Desktop setup and publishing](DESKTOP.md).

@@ -29,19 +29,15 @@ Open **Help & guide** in the app for a quick start, searchable FAQ, date/filter 
 
 This release is free to run and has no paid API, subscription, or account requirement. It does not autonomously search the web, watch videos, perform OCR, or transcribe audio.
 
-## GitHub and bundled builds
+## Desktop installation
 
-The **Publish-to-GitHub-macOS.command** launcher creates the public `zakholzapfel/reelforge` repository and uploads the source after a review prompt. It needs GitHub CLI and the publisher’s account login. The first push starts Apple Silicon Mac, Intel Mac, and Windows build jobs. See [the desktop guide](docs/DESKTOP.md) for exact steps and current release status. End users will not run this publisher script.
+Download a native installer from [GitHub Releases](https://github.com/zakholzapfel/reelforge/releases/tag/v0.5.0). On Mac, quit the old app, open the DMG, and drag ReelForge into Applications. On Windows, run Setup.exe. Python and the media tools are included. The Apple Silicon Mac version has passed the owner's installation and download checks; Intel Mac and Windows await hands-on testing.
 
-The native build includes Python, FFmpeg, ffprobe, and Deno. It produces a drag-to-Applications Mac DMG or a Windows Setup.exe. This ZIP is the source package; it does not contain those finished installers. Preview builds need native GUI tests and dependency-notice review before public binary distribution.
+See [desktop setup and builds](docs/DESKTOP.md) for first-launch warnings, source mode, and development instructions. The browser interface remains available when running from source.
 
-## Desktop app setup
+## Source setup
 
-After installing the prerequisites below, run **Install-Desktop-macOS.command** or **Install-Desktop-Windows.cmd** once. This creates ReelForge in your home Applications folder on Mac, or Start menu/Desktop shortcuts on Windows. Keep the extracted folder in place. Subsequent launches use the icon and open their own window.
-
-The intended finished Mac download is a DMG: drag ReelForge into Applications and launch it without Terminal setup. That download is not available yet. The build pipeline now bundles the media tools; a real Mac build and GUI test are still needed. We are using a DMG without paid signing/notarization, with documented first-launch warnings.
-
-See [Desktop setup and native builds](docs/DESKTOP.md). The original launchers still open browser mode. A companion website and fictional interactive demo introduce the workflow; actual downloading runs locally.
+The instructions below are for developers and people choosing to run the source code. Source users install Python and media tools separately, then run **Install-Desktop-macOS.command** or **Install-Desktop-Windows.cmd** for a desktop shortcut. Keep the extracted source folder in place; source shortcuts use its virtual environment.
 
 ## Start
 
