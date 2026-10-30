@@ -4,7 +4,16 @@
 
 A general-purpose, local media-ingestion app by **Zakery Holzapfel**. Scan supported video sources, review metadata, preview output paths, and download organized collections to your computer or an already mounted network share.
 
-**v0.5.0 desktop source preview.** Open a native app window with a custom icon and shortcuts, or keep using the local browser interface. Processing runs on your computer. Source setup requires Python and media tools; prebuilt native installers are not included.
+**v0.5.0 desktop preview is available as a Mac DMG or Windows installer.** Python and the media tools are bundled. The Apple Silicon Mac version has been tested by the project owner; Intel Mac and Windows have passed automated build checks and await hands-on testing.
+
+- [Download for Apple Silicon Mac](https://github.com/zakholzapfel/reelforge/releases/download/v0.5.0/ReelForge-0.5.0-macOS-arm64.dmg)
+- [Download for Intel Mac](https://github.com/zakholzapfel/reelforge/releases/download/v0.5.0/ReelForge-0.5.0-macOS-x86_64.dmg)
+- [Download for Windows](https://github.com/zakholzapfel/reelforge/releases/download/v0.5.0/ReelForge-0.5.0-Windows-Setup.exe)
+- [Release notes and checksums](https://github.com/zakholzapfel/reelforge/releases/tag/v0.5.0)
+
+On Mac, open the DMG and drag ReelForge into Applications. The free distribution route uses no paid Apple signing/notarization; a first-launch exception may be needed under Privacy & Security. See [installation instructions](docs/releases/v0.5.0.md).
+
+Source installation and developer build instructions remain below.
 
 ## Why ReelForge exists
 
